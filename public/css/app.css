@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card.active {
+    display: flex;
+}
+
+.acesso-liberado {
+    background-color: #4CAF50;
+}
+
+.acesso-negado {
+    background-color: #F44336;
+}
+
+.esperando-card {
+    background-color: #9E9E9E;
+    color: #000;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
