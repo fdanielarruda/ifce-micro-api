@@ -25,6 +25,15 @@ class CredentialController extends Controller
         ]);
     }
 
+    public function delete(Credential $credential)
+    {
+        Credential::destroy($credential->id);
+
+        return response()->json([
+            'credentials' => Credential::all()
+        ]);
+    }
+
     public function access(CredentialAccessRequest $request)
     {
         $credential = Credential::where('access_code', $request->access_code);
